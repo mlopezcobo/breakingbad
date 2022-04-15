@@ -1,105 +1,105 @@
 {
   "@context" : {
     "EmmyAward" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#EmmyAward"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#EmmyAward"
     },
     "isInterpreted" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#isInterpreted",
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#isInterpreted",
       "@type" : "@id"
     },
     "GoldenGlobeAward" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#GoldenGlobeAward"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#GoldenGlobeAward"
     },
     "MainCharacter" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#MainCharacter"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#MainCharacter"
     },
     "Editor" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#Editor"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#Editor"
     },
     "Category" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#Category"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#Category"
     },
     "Director" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#Director"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#Director"
     },
     "Actress" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#Actress"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#Actress"
     },
     "AwardedPerson" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#AwardedPerson"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#AwardedPerson"
     },
     "Character" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#Character"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#Character"
     },
     "BestSeriesCategoryAward" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#BestSeriesCategoryAward"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#BestSeriesCategoryAward"
     },
     "Chapter" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#Chapter"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#Chapter"
     },
     "hasAwardName" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#hasAwardName",
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#hasAwardName",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Composer" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#Composer"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#Composer"
     },
     "Person" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#Person"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#Person"
     },
     "Award" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#Award"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#Award"
     },
     "Actor" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#Actor"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#Actor"
     },
     "hasGender" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#hasGender",
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#hasGender",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "BestActorDramaSeriesCategoryAward" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#BestActorDramaSeriesCategoryAward"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#BestActorDramaSeriesCategoryAward"
     },
     "Producer" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#Producer"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#Producer"
     },
     "isFromSeason" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#isFromSeason",
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#isFromSeason",
       "@type" : "@id"
     },
     "BestActressCategoryAward" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#BestActressCategoryAward"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#BestActressCategoryAward"
     },
     "SatelliteAward" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#SatelliteAward"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#SatelliteAward"
     },
     "Screenwriter" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#Screenwriter"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#Screenwriter"
     },
     "BestScriptCategoryAward" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#BestScriptCategoryAward"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#BestScriptCategoryAward"
     },
     "SecondaryCharacter" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#SecondaryCharacter"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#SecondaryCharacter"
     },
     "MaleActor" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#MaleActor"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#MaleActor"
     },
     "hasCategory" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#hasCategory",
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#hasCategory",
       "@type" : "@id"
     },
     "BestDramaSeriesCategoryAward" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#BestDramaSeriesCategoryAward"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#BestDramaSeriesCategoryAward"
     },
     "Cinematography" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#Cinematography"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#Cinematography"
     },
     "BestScriptDramaSeriesCategoryAward" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#BestScriptDramaSeriesCategoryAward"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#BestScriptDramaSeriesCategoryAward"
     },
     "Series" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#Series"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#Series"
     },
     "sameAs" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
@@ -108,20 +108,20 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "BestActressDramaSeriesCategoryAward" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#BestActressDramaSeriesCategoryAward"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#BestActressDramaSeriesCategoryAward"
     },
     "isAwarded" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#isAwarded",
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#isAwarded",
       "@type" : "@id"
     },
     "Season" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#Season"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#Season"
     },
     "SaturnAward" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#SaturnAward"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#SaturnAward"
     },
     "BestActorCategoryAward" : {
-      "@id" : "http://www.semanticweb.org/mlopezcobo/breaking_bad#BestActorCategoryAward"
+      "@id" : "https://w3id.org/def/mlopezcobobreakingbad#BestActorCategoryAward"
     }
   }
 }
