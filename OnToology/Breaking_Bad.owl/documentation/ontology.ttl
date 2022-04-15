@@ -1,14 +1,15 @@
-@prefix : <http://www.semanticweb.org/mlopezcobo/breaking_bad#> .
+@prefix : <https://w3id.org/def/mlopezcobobreakingbad#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/mlopezcobo/breaking_bad#> .
+@base <https://w3id.org/def/mlopezcobobreakingbad#> .
 
-<http://www.semanticweb.org/mlopezcobo/breaking_bad> rdf:type owl:Ontology ;
-                                                      rdfs:comment "El titulo de esta ontología es: Breaking Bad."@es ,
-                                                                   "Esta ontologia ha sido creada por Miguel Ángel López Cobo."@es .
+<https://w3id.org/def/mlopezcobobreakingbad> rdf:type owl:Ontology ;
+                                              owl:versionIRI <https://w3id.org/def/mlopezcobobreakingbad/1.0.0> ;
+                                              rdfs:comment "El titulo de esta ontología es: Breaking Bad."@es ,
+                                                           "Esta ontologia ha sido creada por Miguel Ángel López Cobo."@es .
 
 #################################################################
 #    Annotation properties
@@ -22,7 +23,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#hasCategory
+###  https://w3id.org/def/mlopezcobobreakingbad#hasCategory
 :hasCategory rdf:type owl:ObjectProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Award ;
@@ -30,7 +31,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
              rdfs:comment "Esta propiedad de objeto relaciona un premio y su categoria. Esto permitirá que, dado un premio, el razonador pueda inferir su subclase correspondiente."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#isAwarded
+###  https://w3id.org/def/mlopezcobobreakingbad#isAwarded
 :isAwarded rdf:type owl:ObjectProperty ,
                     owl:InverseFunctionalProperty ;
            rdfs:domain [ rdf:type owl:Class ;
@@ -42,7 +43,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
            rdfs:comment "Esta propiedad de objeto relaciona a un objeto que recibe un premio con el premio que recibe. Por ejemplo, Aaron Paul isAwarded GoldenGlobeBestActor2010 significaría que el acto Aaron Paul ganó el Globo de Oro a mejor actor de 2010."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#isFromSeason
+###  https://w3id.org/def/mlopezcobobreakingbad#isFromSeason
 :isFromSeason rdf:type owl:ObjectProperty ,
                        owl:FunctionalProperty ;
               rdfs:domain :Chapter ;
@@ -50,7 +51,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
               rdfs:comment "Esta es la propiedad que une los capitulos y sus temporadas. Un capitulo determinado debe pertenecer a una temporada determinada."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#isInterpreted
+###  https://w3id.org/def/mlopezcobobreakingbad#isInterpreted
 :isInterpreted rdf:type owl:ObjectProperty ,
                         owl:FunctionalProperty ,
                         owl:InverseFunctionalProperty ;
@@ -63,7 +64,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#hasAwardName
+###  https://w3id.org/def/mlopezcobobreakingbad#hasAwardName
 :hasAwardName rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
               rdfs:domain :Award ;
@@ -71,7 +72,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
               rdfs:comment "Esta propiedad indica el nombre de un premio. Por ejemplo, Globo de Oro, Emmy..." .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#hasGender
+###  https://w3id.org/def/mlopezcobobreakingbad#hasGender
 :hasGender rdf:type owl:DatatypeProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain [ rdf:type owl:Class ;
@@ -87,12 +88,12 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Actor
+###  https://w3id.org/def/mlopezcobobreakingbad#Actor
 :Actor rdf:type owl:Class ;
        rdfs:subClassOf :Person .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Actress
+###  https://w3id.org/def/mlopezcobobreakingbad#Actress
 :Actress rdf:type owl:Class ;
          rdfs:subClassOf :Actor ;
          owl:disjointWith :MaleActor ,
@@ -107,12 +108,12 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
          rdfs:comment "Esta subclase es el conjunto de actrices que participan en la serie."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Award
+###  https://w3id.org/def/mlopezcobobreakingbad#Award
 :Award rdf:type owl:Class ;
        rdfs:comment "Esta clase representa el conjunto de todos los objetos que son un premio en el ambito de programas de televisión."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#AwardedPerson
+###  https://w3id.org/def/mlopezcobobreakingbad#AwardedPerson
 :AwardedPerson rdf:type owl:Class ;
                owl:equivalentClass [ owl:intersectionOf ( :Person
                                                           [ rdf:type owl:Restriction ;
@@ -126,7 +127,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                rdfs:comment "Este subgrupo representa a aquellos participantes en la serie que han sido galardonados con al menos un premio."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestActorCategoryAward
+###  https://w3id.org/def/mlopezcobobreakingbad#BestActorCategoryAward
 :BestActorCategoryAward rdf:type owl:Class ;
                         owl:equivalentClass [ owl:intersectionOf ( :Award
                                                                    [ rdf:type owl:Restriction ;
@@ -140,7 +141,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                         rdfs:comment "Esta clase representa el subconjunto de todos los premios que son un premio al mejor actor."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestActorDramaSeriesCategoryAward
+###  https://w3id.org/def/mlopezcobobreakingbad#BestActorDramaSeriesCategoryAward
 :BestActorDramaSeriesCategoryAward rdf:type owl:Class ;
                                    owl:equivalentClass [ owl:intersectionOf ( :Award
                                                                               [ rdf:type owl:Restriction ;
@@ -154,7 +155,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                    rdfs:comment "Esta clase representa el subconjunto de todos los premios que son un premio al mejor actor de una serie de drama. No hay que interpretar que esto es un subconjunto de premio al mejor actor, ya que son categorias diferentes en cualquier entrega de premios."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestActressCategoryAward
+###  https://w3id.org/def/mlopezcobobreakingbad#BestActressCategoryAward
 :BestActressCategoryAward rdf:type owl:Class ;
                           owl:equivalentClass [ owl:intersectionOf ( :Award
                                                                      [ rdf:type owl:Restriction ;
@@ -168,7 +169,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                           rdfs:comment "Esta clase representa el subconjunto de premios que son un premio a la mejor actriz."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestActressDramaSeriesCategoryAward
+###  https://w3id.org/def/mlopezcobobreakingbad#BestActressDramaSeriesCategoryAward
 :BestActressDramaSeriesCategoryAward rdf:type owl:Class ;
                                      owl:equivalentClass [ owl:intersectionOf ( :Award
                                                                                 [ rdf:type owl:Restriction ;
@@ -182,7 +183,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                      rdfs:comment "Esta clase representa el subconjunto de todos los premios que son un premio a la mejor actriz de una serie de drama. No hay que interpretar que esto es un subconjunto de premio a la mejor actriz, ya que son categorias diferentes en cualquier entrega de premios."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestDramaSeriesCategoryAward
+###  https://w3id.org/def/mlopezcobobreakingbad#BestDramaSeriesCategoryAward
 :BestDramaSeriesCategoryAward rdf:type owl:Class ;
                               owl:equivalentClass [ owl:intersectionOf ( :Award
                                                                          [ rdf:type owl:Restriction ;
@@ -196,7 +197,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                               rdfs:comment "Esta clase representa el sunconjunto de premios que son un premio a la mejor serie de drama. No hay que interpretar que esto es una subclase de premios a la mejor serie, son categorias de premio diferentes."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestScriptCategoryAward
+###  https://w3id.org/def/mlopezcobobreakingbad#BestScriptCategoryAward
 :BestScriptCategoryAward rdf:type owl:Class ;
                          owl:equivalentClass [ owl:intersectionOf ( :Award
                                                                     [ rdf:type owl:Restriction ;
@@ -210,7 +211,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                          rdfs:comment "Esta clase es un subconjunto de todos los premios que son premio al mejor guion."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestScriptDramaSeriesCategoryAward
+###  https://w3id.org/def/mlopezcobobreakingbad#BestScriptDramaSeriesCategoryAward
 :BestScriptDramaSeriesCategoryAward rdf:type owl:Class ;
                                     owl:equivalentClass [ owl:intersectionOf ( :Award
                                                                                [ rdf:type owl:Restriction ;
@@ -224,7 +225,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                     rdfs:comment "Esta clase representa al subconjunto de premios al mejor guion de una serie de drama. No hay que entender que es una subclase de premios al mejor guion, son categorias diferentes."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestSeriesCategoryAward
+###  https://w3id.org/def/mlopezcobobreakingbad#BestSeriesCategoryAward
 :BestSeriesCategoryAward rdf:type owl:Class ;
                          owl:equivalentClass [ owl:intersectionOf ( :Award
                                                                     [ rdf:type owl:Restriction ;
@@ -238,7 +239,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                          rdfs:comment "Esta clase es un subconjunto de todos los premios que son un premio a la mejor serie."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Category
+###  https://w3id.org/def/mlopezcobobreakingbad#Category
 :Category rdf:type owl:Class ;
           owl:equivalentClass [ rdf:type owl:Class ;
                                 owl:oneOf ( :BestActor
@@ -254,62 +255,62 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
           rdfs:comment "Esto es una subclase enumerada que representa todas las categorias posibles que puede tener un premio. Su utilidad es poder inferir la categoria de un premio mediante la propiedad de objeto hasCategory."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Chapter
+###  https://w3id.org/def/mlopezcobobreakingbad#Chapter
 :Chapter rdf:type owl:Class ;
          rdfs:comment "Esta clase representa el subgrupo de objetos que son el capitulo de Breaking Bad."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Character
+###  https://w3id.org/def/mlopezcobobreakingbad#Character
 :Character rdf:type owl:Class ;
            rdfs:comment "Esta clase es el subconjunto de objetos que son un personaje de la serie Breaking Bad."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Cinematography
+###  https://w3id.org/def/mlopezcobobreakingbad#Cinematography
 :Cinematography rdf:type owl:Class ;
                 rdfs:subClassOf :Person ;
                 rdfs:comment "Esta subclase representa al subconjunto de participantes que son expertos en camara y cinematografia en la serie."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Composer
+###  https://w3id.org/def/mlopezcobobreakingbad#Composer
 :Composer rdf:type owl:Class ;
           rdfs:subClassOf :Person ;
           rdfs:comment "Esta subclase representa al subconjunto de participantes que son compositores de la serie."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Director
+###  https://w3id.org/def/mlopezcobobreakingbad#Director
 :Director rdf:type owl:Class ;
           rdfs:subClassOf :Person ;
           rdfs:comment "Esta subclase representa al subconjunto de participantes que son directores de la serie."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Editor
+###  https://w3id.org/def/mlopezcobobreakingbad#Editor
 :Editor rdf:type owl:Class ;
         rdfs:subClassOf :Person ;
         rdfs:comment "Esta subclase representa al subconjunto de participantes que son editores de la serie."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#EmmyAward
+###  https://w3id.org/def/mlopezcobobreakingbad#EmmyAward
 :EmmyAward rdf:type owl:Class ;
            rdfs:subClassOf :Award ;
            rdfs:comment "Este subconjunto de premios son todos aquellos que son un Emmy."@es ;
            rdfs:sameAs "https://dbpedia.org/page/Emmy_Awards" .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#GoldenGlobeAward
+###  https://w3id.org/def/mlopezcobobreakingbad#GoldenGlobeAward
 :GoldenGlobeAward rdf:type owl:Class ;
                   rdfs:subClassOf :Award ;
                   rdfs:comment "Este subconjunto de premios son todos aquellos que son un Globo de Oro."@es ;
                   rdfs:sameAs "https://dbpedia.org/page/Golden_Globe_Awards" .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#MainCharacter
+###  https://w3id.org/def/mlopezcobobreakingbad#MainCharacter
 :MainCharacter rdf:type owl:Class ;
                rdfs:subClassOf :Character ;
                owl:disjointWith :SecondaryCharacter ;
                rdfs:comment "Esta subclase es un conjunto de aquellos personajes que son personajes principales de la serie Breaking Bad."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#MaleActor
+###  https://w3id.org/def/mlopezcobobreakingbad#MaleActor
 :MaleActor rdf:type owl:Class ;
            rdfs:subClassOf :Actor ;
            owl:disjointWith [ rdf:type owl:Restriction ;
@@ -323,7 +324,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
            rdfs:comment "Esta subclase es el conjunto de actores (Masculinos) que participan en la serie."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Person
+###  https://w3id.org/def/mlopezcobobreakingbad#Person
 :Person rdf:type owl:Class ;
         owl:disjointWith [ rdf:type owl:Restriction ;
                            owl:onProperty :isAwarded ;
@@ -336,43 +337,43 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
         rdfs:comment "En este contexto, la clase Person está identificando a todas aquellas personas involucradas la creación de la serie Breaking Bad."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Producer
+###  https://w3id.org/def/mlopezcobobreakingbad#Producer
 :Producer rdf:type owl:Class ;
           rdfs:subClassOf :Person ;
           rdfs:comment "Esta subclase representa al subconjunto de participantes que son productores de la serie."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#SatelliteAward
+###  https://w3id.org/def/mlopezcobobreakingbad#SatelliteAward
 :SatelliteAward rdf:type owl:Class ;
                 rdfs:subClassOf :Award ;
                 rdfs:comment "Este subconjunto de premios son todos aquellos que son un Satellite."@es ;
                 rdfs:sameAs "https://dbpedia.org/page/Satellite_Awards" .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#SaturnAward
+###  https://w3id.org/def/mlopezcobobreakingbad#SaturnAward
 :SaturnAward rdf:type owl:Class ;
              rdfs:subClassOf :Award ;
              rdfs:comment "Este subconjunto de premios son todos aquellos que son un Saturn."@es ;
              rdfs:sameAs "https://dbpedia.org/page/Saturn_Awards" .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Screenwriter
+###  https://w3id.org/def/mlopezcobobreakingbad#Screenwriter
 :Screenwriter rdf:type owl:Class ;
               rdfs:subClassOf :Person .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Season
+###  https://w3id.org/def/mlopezcobobreakingbad#Season
 :Season rdf:type owl:Class ;
         rdfs:comment "Esta clase representa a todas aquellas cosas que son una temporada de Breaking Bad."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#SecondaryCharacter
+###  https://w3id.org/def/mlopezcobobreakingbad#SecondaryCharacter
 :SecondaryCharacter rdf:type owl:Class ;
                     rdfs:subClassOf :Character ;
                     rdfs:comment "Esta subclase es un conjunto de aquellos personajes que son personajes con un rol secundario en la serie Breaking Bad."@es .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Series
+###  https://w3id.org/def/mlopezcobobreakingbad#Series
 :Series rdf:type owl:Class ;
         owl:disjointWith [ rdf:type owl:Restriction ;
                            owl:onProperty :isAwarded ;
@@ -393,102 +394,102 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Aaron_Paul
+###  https://w3id.org/def/mlopezcobobreakingbad#Aaron_Paul
 :Aaron_Paul rdf:type owl:NamedIndividual ;
             :hasGender "Male" ;
             rdfs:sameAs "https://dbpedia.org/page/Aaron_Paul" .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Anna_Gunn
+###  https://w3id.org/def/mlopezcobobreakingbad#Anna_Gunn
 :Anna_Gunn rdf:type owl:NamedIndividual ;
            :hasGender "Female" ;
            rdfs:sameAs "https://dbpedia.org/page/Anna_Gunn" .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestActor
+###  https://w3id.org/def/mlopezcobobreakingbad#BestActor
 :BestActor rdf:type owl:NamedIndividual ,
                     :Category .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestActorDrama
+###  https://w3id.org/def/mlopezcobobreakingbad#BestActorDrama
 :BestActorDrama rdf:type owl:NamedIndividual ,
                          :Category .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestActress
+###  https://w3id.org/def/mlopezcobobreakingbad#BestActress
 :BestActress rdf:type owl:NamedIndividual ,
                       :Category .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestActressDrama
+###  https://w3id.org/def/mlopezcobobreakingbad#BestActressDrama
 :BestActressDrama rdf:type owl:NamedIndividual ,
                            :Category .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestDramaSeries
+###  https://w3id.org/def/mlopezcobobreakingbad#BestDramaSeries
 :BestDramaSeries rdf:type owl:NamedIndividual ,
                           :Category .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestScript
+###  https://w3id.org/def/mlopezcobobreakingbad#BestScript
 :BestScript rdf:type owl:NamedIndividual ,
                      :Category .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestScriptDramaSeries
+###  https://w3id.org/def/mlopezcobobreakingbad#BestScriptDramaSeries
 :BestScriptDramaSeries rdf:type owl:NamedIndividual ,
                                 :Category .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#BestSeries
+###  https://w3id.org/def/mlopezcobobreakingbad#BestSeries
 :BestSeries rdf:type owl:NamedIndividual ,
                      :Category .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Breaking_Bad
+###  https://w3id.org/def/mlopezcobobreakingbad#Breaking_Bad
 :Breaking_Bad rdf:type owl:NamedIndividual ,
                        :Series ;
               :isAwarded :Globo_de_Oro_a_Mejor_Serie_Dramatica_de_2014 ;
               rdfs:sameAs "https://dbpedia.org/page/Breaking_Bad" .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Bryan_Cranston
+###  https://w3id.org/def/mlopezcobobreakingbad#Bryan_Cranston
 :Bryan_Cranston rdf:type owl:NamedIndividual ;
                 :isAwarded :Emmy_a_Mejor_Actor_Principial_en_Serie_Dramatica_de_2009 ;
                 :hasGender "Male" ;
                 rdfs:sameAs "https://dbpedia.org/page/Bryan_Cranston" .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Emmy_a_Mejor_Actor_Principial_en_Serie_Dramatica_de_2009
+###  https://w3id.org/def/mlopezcobobreakingbad#Emmy_a_Mejor_Actor_Principial_en_Serie_Dramatica_de_2009
 :Emmy_a_Mejor_Actor_Principial_en_Serie_Dramatica_de_2009 rdf:type owl:NamedIndividual ;
                                                           :hasCategory :BestActorDrama ;
                                                           :hasAwardName "Emmy" .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Globo_de_Oro_a_Mejor_Serie_Dramatica_de_2014
+###  https://w3id.org/def/mlopezcobobreakingbad#Globo_de_Oro_a_Mejor_Serie_Dramatica_de_2014
 :Globo_de_Oro_a_Mejor_Serie_Dramatica_de_2014 rdf:type owl:NamedIndividual ;
                                               :hasCategory :BestDramaSeries ;
                                               :hasAwardName "GoldenGlobe" .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Jesse_Pinkman
+###  https://w3id.org/def/mlopezcobobreakingbad#Jesse_Pinkman
 :Jesse_Pinkman rdf:type owl:NamedIndividual ;
                :isInterpreted :Aaron_Paul .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Skyler_White
+###  https://w3id.org/def/mlopezcobobreakingbad#Skyler_White
 :Skyler_White rdf:type owl:NamedIndividual ;
               :isInterpreted :Anna_Gunn .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Vince_Gilligan
+###  https://w3id.org/def/mlopezcobobreakingbad#Vince_Gilligan
 :Vince_Gilligan rdf:type owl:NamedIndividual ,
                          :Director ,
                          :Producer ,
                          :Screenwriter .
 
 
-###  http://www.semanticweb.org/mlopezcobo/breaking_bad#Walter_White
+###  https://w3id.org/def/mlopezcobobreakingbad#Walter_White
 :Walter_White rdf:type owl:NamedIndividual ;
               :isInterpreted :Bryan_Cranston .
 
@@ -535,21 +536,69 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 #    Rules
 #################################################################
 
-<urn:swrl:var#a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
-
 <urn:swrl:var#aw> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Actor ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Award ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#aw>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasGender ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> "Male"
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAwardName ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#aw> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "Saturn"
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :SaturnAward ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#aw>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasGender ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "Female"
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Actor ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Actress ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasGender ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "Male"
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Actor ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
                                                                 ] ;
                                                       rdf:rest rdf:nil
                                                     ]
@@ -565,15 +614,15 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Award ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#aw>
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAwardName ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#aw> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "Emmy"
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAwardName ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#aw> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> "Emmy"
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Award ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#aw>
                                                                 ] ;
                                                       rdf:rest rdf:nil
                                                     ]
@@ -589,15 +638,15 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Award ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#aw>
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAwardName ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#aw> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "GoldenGlobe"
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAwardName ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#aw> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> "GoldenGlobe"
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Award ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#aw>
                                                                 ] ;
                                                       rdf:rest rdf:nil
                                                     ]
@@ -630,54 +679,6 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :SatelliteAward ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#aw>
-                                                     ] ;
-                                           rdf:rest rdf:nil
-                                         ]
- ] .
-
-[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Award ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#aw>
-                                                     ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAwardName ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#aw> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> "Saturn"
-                                                                ] ;
-                                                      rdf:rest rdf:nil
-                                                    ]
-                                         ] ;
-   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :SaturnAward ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#aw>
-                                                     ] ;
-                                           rdf:rest rdf:nil
-                                         ]
- ] .
-
-[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Actor ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
-                                                     ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasGender ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> "Female"
-                                                                ] ;
-                                                      rdf:rest rdf:nil
-                                                    ]
-                                         ] ;
-   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Actress ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
                                                      ] ;
                                            rdf:rest rdf:nil
                                          ]
