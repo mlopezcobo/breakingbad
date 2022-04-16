@@ -90,7 +90,8 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/def/mlopezcobo_breakingbad#Actor
 :Actor rdf:type owl:Class ;
-       rdfs:subClassOf :Person .
+       rdfs:subClassOf :Person ;
+       rdfs:comment "Esta subclase de Person representa al conjunto de participantes que son actores en la serie."@es .
 
 
 ###  https://w3id.org/def/mlopezcobo_breakingbad#Actress
@@ -359,7 +360,8 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/def/mlopezcobo_breakingbad#Screenwriter
 :Screenwriter rdf:type owl:Class ;
-              rdfs:subClassOf :Person .
+              rdfs:subClassOf :Person ;
+              rdfs:comment "Esta subclase representa al subconjunto de participantes que son guionistas."@es .
 
 
 ###  https://w3id.org/def/mlopezcobo_breakingbad#Season
