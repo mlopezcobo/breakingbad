@@ -1,0 +1,127 @@
+{
+  "@context" : {
+    "EmmyAward" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#EmmyAward"
+    },
+    "isInterpreted" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#isInterpreted",
+      "@type" : "@id"
+    },
+    "GoldenGlobeAward" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#GoldenGlobeAward"
+    },
+    "MainCharacter" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#MainCharacter"
+    },
+    "Editor" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Editor"
+    },
+    "Category" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Category"
+    },
+    "Director" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Director"
+    },
+    "Actress" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Actress"
+    },
+    "AwardedPerson" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#AwardedPerson"
+    },
+    "Character" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Character"
+    },
+    "BestSeriesCategoryAward" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#BestSeriesCategoryAward"
+    },
+    "Chapter" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Chapter"
+    },
+    "hasAwardName" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#hasAwardName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Composer" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Composer"
+    },
+    "Person" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Person"
+    },
+    "Award" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Award"
+    },
+    "Actor" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Actor"
+    },
+    "hasGender" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#hasGender",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "BestActorDramaSeriesCategoryAward" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#BestActorDramaSeriesCategoryAward"
+    },
+    "Producer" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Producer"
+    },
+    "isFromSeason" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#isFromSeason",
+      "@type" : "@id"
+    },
+    "BestActressCategoryAward" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#BestActressCategoryAward"
+    },
+    "SatelliteAward" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#SatelliteAward"
+    },
+    "Screenwriter" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Screenwriter"
+    },
+    "BestScriptCategoryAward" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#BestScriptCategoryAward"
+    },
+    "SecondaryCharacter" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#SecondaryCharacter"
+    },
+    "MaleActor" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#MaleActor"
+    },
+    "hasCategory" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#hasCategory",
+      "@type" : "@id"
+    },
+    "BestDramaSeriesCategoryAward" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#BestDramaSeriesCategoryAward"
+    },
+    "Cinematography" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Cinematography"
+    },
+    "BestScriptDramaSeriesCategoryAward" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#BestScriptDramaSeriesCategoryAward"
+    },
+    "Series" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Series"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "BestActressDramaSeriesCategoryAward" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#BestActressDramaSeriesCategoryAward"
+    },
+    "isAwarded" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#isAwarded",
+      "@type" : "@id"
+    },
+    "Season" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Season"
+    },
+    "SaturnAward" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#SaturnAward"
+    },
+    "BestActorCategoryAward" : {
+      "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#BestActorCategoryAward"
+    }
+  }
+}
