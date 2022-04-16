@@ -103,6 +103,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://w3id.org/def/mlopezcobo_breakingbad#Actor
 <https://w3id.org/def/mlopezcobo_breakingbad#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/mlopezcobo_breakingbad#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/mlopezcobo_breakingbad#Person> .
+<https://w3id.org/def/mlopezcobo_breakingbad#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta subclase de Person representa al conjunto de participantes que son actores en la serie."@es .
 # 
 # https://w3id.org/def/mlopezcobo_breakingbad#Actress
 <https://w3id.org/def/mlopezcobo_breakingbad#Actress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -409,6 +410,7 @@ _:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/mlopezcobo_breakingbad#Screenwriter
 <https://w3id.org/def/mlopezcobo_breakingbad#Screenwriter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/mlopezcobo_breakingbad#Screenwriter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/mlopezcobo_breakingbad#Person> .
+<https://w3id.org/def/mlopezcobo_breakingbad#Screenwriter> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta subclase representa al subconjunto de participantes que son guionistas."@es .
 # 
 # https://w3id.org/def/mlopezcobo_breakingbad#Season
 <https://w3id.org/def/mlopezcobo_breakingbad#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
