@@ -649,6 +649,10 @@
 }, {
   "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Actor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta subclase de Person representa al conjunto de participantes que son actores en la serie."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Person"
   } ]
@@ -1061,6 +1065,10 @@
 }, {
   "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Screenwriter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta subclase representa al subconjunto de participantes que son guionistas."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/mlopezcobo_breakingbad#Person"
   } ]
