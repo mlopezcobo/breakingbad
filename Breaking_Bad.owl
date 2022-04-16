@@ -152,6 +152,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/mlopezcobo_breakingbad#Actor">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/mlopezcobo_breakingbad#Person"/>
+        <rdfs:comment xml:lang="es">Esta subclase de Person representa al conjunto de participantes que son actores en la serie.</rdfs:comment>
     </owl:Class>
     
 
@@ -547,6 +548,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/mlopezcobo_breakingbad#Screenwriter">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/mlopezcobo_breakingbad#Person"/>
+        <rdfs:comment xml:lang="es">Esta subclase representa al subconjunto de participantes que son guionistas.</rdfs:comment>
     </owl:Class>
     
 
